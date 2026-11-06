@@ -1,0 +1,27 @@
+/* estilos.css
+   Estilos propios del tablero. Bootstrap se importa antes en main.jsx. */
+
+body {
+  background-color: #f5f7fb;
+}
+
+/* Tarjeta de una serie: se levanta un poco al pasar el mouse */
+.tarjeta-serie {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.tarjeta-serie:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08);
+}
+
+/* Colores de la insignia de cada estado */
+.estado-por-ver { background-color: #e2e8f0; color: #334155; }
+.estado-viendo  { background-color: #fef3c7; color: #92400e; }
+.estado-vista   { background-color: #dcfce7; color: #166534; }
+
+/* Número grande del resumen */
+.resumen-numero {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--bs-primary);
+}
